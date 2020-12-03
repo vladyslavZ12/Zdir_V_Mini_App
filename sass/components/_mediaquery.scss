@@ -1,0 +1,87 @@
+@media (min-width: 1200px){
+    
+#app{
+    font-family: 'Roboto';
+}
+footer{
+    padding: 9.2%;
+    height: 500px;
+}
+.heading{
+    padding-top: 5%;
+    text-align: center;
+}
+nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 60%;
+
+        li{
+            list-style: none;
+            text-decoration: none;
+        }
+    }
+}
+#logo{
+    width: 5%;
+    img{
+        max-height: 100%;
+    }
+}
+.video_wrapper{
+    width: 60%;
+    height: 100%;
+    padding: 0% 0% 5% 5%;
+    
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    display: block;
+}
+
+.wrapper{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.carInfo{
+    width: 40%;
+    padding: 5%;
+}
+
+.thumbnails{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+
+    padding: 5%;
+
+    li{
+        width: 20%;
+        padding: 5%;
+    }
+
+    img{
+        width: 100%;
+    }
+}
+}

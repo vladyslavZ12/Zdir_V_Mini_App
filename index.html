@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Working with Vue</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <main id="app">
+        <nav>
+            <div id="logo">
+                <img src="http://seekvectorlogo.com/wp-content/uploads/2018/03/mini-vector-logo.png" />
+            </div>
+
+            <ul>
+                <li>MODELS</li>
+                <li>TOOLS</li>
+                <li>DISCOVER</li>
+                <li>OWNERS</li>
+                <li>PRE-OWNED</li>
+            </ul>
+        </nav>
+
+        <h1 class="heading"> CHOOSE YOUR CAR</h1>
+        <ul class="thumbnails">
+            <car-card @showmydata="showCarData" v-for="item, index in collection" :car="item" :key="item.id"></car-card>
+        </ul>
+        <section class="wrapper">
+
+            <div class="video_wrapper">
+        <video controls loop :src="'videos/' + currentCarData.video"></video>
+    </div>
+
+        <section class="carInfo">
+            <h1>{{ currentCarData.name }}</h1>
+            <h3> from {{ currentCarData.price }}</h3>
+            <p>{{ currentCarData.description }}</p>
+        </section>
+
+        
+
+    </section>
+
+    <footer>
+        <h1>STAY IN TOUCH!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fugiat ullam quo fuga facilis? Iusto labore placeat, asperiores, veniam consequuntur inventore temporibus rem deleniti fugiat dolorem a voluptate cumque eos?</p>
+    </footer>
+    
+        <!-- show more section -->
+        
+
+    </main>
+
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

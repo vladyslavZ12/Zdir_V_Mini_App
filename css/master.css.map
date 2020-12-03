@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACA,WAAW,EAAE,QAAQ",
+"sources": ["../sass/components/_main.scss"],
+"names": [],
+"file": "master.css"
+}
